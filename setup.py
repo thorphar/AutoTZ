@@ -14,12 +14,11 @@ def get_version():
 setup(
     name="autotz",
     version=get_version(),  # Dynamically set version
-    packages=find_packages(where="src"),
-    package_dir={"": "src"},
+    packages=find_packages(),
     install_requires=["requests"],
     entry_points={
         "console_scripts": [
-            "autotz=main:main"
+            "autotz=autotz.main:main"
         ]
     },
     author="Harry Thorpe",

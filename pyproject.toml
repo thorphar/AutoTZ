@@ -3,4 +3,4 @@ requires = ["setuptools", "wheel", "setuptools_scm"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools_scm]
-version_file = "src/__init__.py"
+version_file = "autotz/__init__.py"
