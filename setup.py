@@ -19,7 +19,7 @@ setup(
     install_requires=["requests"],
     entry_points={
         "console_scripts": [
-            "autotz=src.main:main"
+            "autotz=main:main"
         ]
     },
     author="Harry Thorpe",
