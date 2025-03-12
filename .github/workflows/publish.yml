@@ -29,7 +29,7 @@ jobs:
         run: |
           VERSION=${{ github.event.release.tag_name }}
           echo "Setting package version to $VERSION"
-          sed -i "s/__version__ = .*/__version__ = \"$VERSION\"/" src/__init__.py
+          sed -i "s/__version__ = .*/__version__ = \"$VERSION\"/" autotz/__init__.py
 
       - name: Build Package
         run: python -m build

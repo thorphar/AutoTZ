@@ -2,14 +2,14 @@ import re
 import os
 from setuptools import setup, find_packages
 
-# Read the version dynamically from src/__init__.py
+# Read the version dynamically from autotz/__init__.py
 def get_version():
-    version_file = os.path.join(os.path.dirname(__file__), "src", "__init__.py")
+    version_file = os.path.join(os.path.dirname(__file__), "autotz", "__init__.py")
     with open(version_file, "r") as f:
         match = re.search(r'__version__ = "(.*?)"', f.read())
         if match:
             return match.group(1)
-        raise RuntimeError("Version not found in src/__init__.py")
+        raise RuntimeError("Version not found in autotz/__init__.py")
 
 setup(
     name="autotz",
